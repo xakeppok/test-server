@@ -1,7 +1,7 @@
-var express = require('express');
-var cors = require('cors');
+const express = require('express');
+const cors = require('cors');
 
-var app = express();
+const app = express();
 app.use(cors());
 app.use(express.json());
 app.get('/', function(req, res) {
@@ -9,9 +9,8 @@ app.get('/', function(req, res) {
 });
 app.post('/numbers', (req, res) => {
     const { first, second } = req.body;
-    console.log(req.body);
     if (!isNaN(Number(first)) && !isNaN(Number(second))) {
-        var sum = +first + +second;
+        const sum = +first + +second;
         res.send({ sum });
     } else {
         res.status(400).send({ error: 'Wrong input' });
