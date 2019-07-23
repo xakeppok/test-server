@@ -1,4 +1,4 @@
-# Express server for my AnuglarJS test application
+# Express server for AngularJS sum application
 ### Starting
 npm i
 npm start
