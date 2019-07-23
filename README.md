@@ -1,1 +1,3 @@
-# test-server
+# Starting
+npm i
+npm start
